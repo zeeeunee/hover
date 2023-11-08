@@ -31,13 +31,14 @@ html {
   --fontBody: "Noto Sans KR", "arial", "돋움";
 }
 
-div {
+.wrap1 {
   width: 300px;
   height: 300px;
   padding: 20px;
+  border: 1px solid black;
   background-color: green;
 }
-div h1 {
+.wrap1 h1 {
   position: absolute;
   top: 0;
   left: -150px;
@@ -45,10 +46,26 @@ div h1 {
   color: #fff;
   opacity: 1;
 }
-div:hover h1 {
+.wrap1:hover h1 {
   left: 20px;
   color: #bbb;
   transition: 1s;
+}
+
+.wrap2 {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap;
+}
+.wrap2 .pic {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
+.wrap2 .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
