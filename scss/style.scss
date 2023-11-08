@@ -1,2 +1,16 @@
 @import 'reset';
 @import 'variable';
+
+div {
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: green;
+	display: flex;
+	flex-flow: wrap;
+
+	h1 {
+		font-size: 3rem;
+	}
+}
